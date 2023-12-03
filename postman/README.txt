@@ -1,0 +1,2 @@
+- Parent folder has 3 collections that can be imported into Postman to test the endpoints.
+Make sure to copy the token you get when logging in and paste it to Posts and Users collection so every child request has the token.

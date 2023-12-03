@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "5ac54d01-fa04-4763-abe5-71a77b72f5c3",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26060145"
+	},
+	"item": [
+		{
+			"name": "All",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "ALL",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/users/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "571"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"23b-IO52Dz+B9HLEcgXJEsRa7hwAd2Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jul 2023 22:28:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Fetched users successfully!\",\n    \"users\": [\n        {\n            \"_id\": \"64a1f616e9e3eb7b6bdc4cac\",\n            \"firstName\": \"user\",\n            \"lastName\": \"user\",\n            \"password\": \"$2a$12$kakUMfJWkiTULnS2VqZjTO94E77aFagpl6Mz3a9vludRP3dHloI4u\",\n            \"email\": \"user@user.com\",\n            \"role\": \"BLOGGER\",\n            \"posts\": [\n                \"64a1f6d2e9e3eb7b6bdc4cb4\",\n                \"64a1f7ee0b0f1f504090efe9\",\n                \"64a1f7ff0b0f1f504090efed\"\n            ],\n            \"__v\": 8\n        },\n        {\n            \"_id\": \"64a1f8160b0f1f504090eff2\",\n            \"firstName\": \"admin\",\n            \"lastName\": \"admin\",\n            \"password\": \"$2a$12$ftHeB8ZgIQzV3SU6gb8g.OD4OZnCETA.mo4al65gnJeEg/5XBNjjq\",\n            \"email\": \"admin@admin.com\",\n            \"role\": \"ADMIN\",\n            \"posts\": [\n                \"64a1f9fc49a2ecae2789053e\"\n            ],\n            \"__v\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "By Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/users/64a1f616e9e3eb7b6bdc4cac",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"64a1f616e9e3eb7b6bdc4cac"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "319"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13f-ZTIl2fxptZ6/RPMZYYKDIIwSAKQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jul 2023 22:29:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User fetched\",\n    \"user\": {\n        \"_id\": \"64a1f616e9e3eb7b6bdc4cac\",\n        \"firstName\": \"user\",\n        \"lastName\": \"user\",\n        \"password\": \"$2a$12$kakUMfJWkiTULnS2VqZjTO94E77aFagpl6Mz3a9vludRP3dHloI4u\",\n        \"email\": \"user@user.com\",\n        \"role\": \"BLOGGER\",\n        \"posts\": [\n            \"64a1f6d2e9e3eb7b6bdc4cb4\",\n            \"64a1f7ee0b0f1f504090efe9\",\n            \"64a1f7ff0b0f1f504090efed\"\n        ],\n        \"__v\": 8\n    }\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXJJZCI6IjY0YTFmODE2MGIwZjFmNTA0MDkwZWZmMiIsImlhdCI6MTY4ODMzNjQyMywiZXhwIjoxNjg4MzQwMDIzfQ.MAXnAws2zv8_Qy_5cgtbm6vrMbC9kxDBfwPqDYq7CUw",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

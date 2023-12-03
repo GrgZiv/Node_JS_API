@@ -1,0 +1,678 @@
+{
+	"info": {
+		"_postman_id": "f0fb120e-4e06-480a-93a3-0f0632372211",
+		"name": "Posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26060145"
+	},
+	"item": [
+		{
+			"name": "ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/feed/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feed",
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ALL",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/feed/posts",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"feed",
+								"posts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "727"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2d7-xEzf0zPt30dnhjrM+ETzkrJk5B0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jul 2023 22:24:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Fetched posts successfully!\",\n    \"posts\": [\n        {\n            \"_id\": \"64a1f6d2e9e3eb7b6bdc4cb4\",\n            \"title\": \"USER POST UPDATED\",\n            \"content\": \"UPDATED\",\n            \"author\": \"64a1f616e9e3eb7b6bdc4cac\",\n            \"createdAt\": \"2023-07-02T22:14:42.779Z\",\n            \"updatedAt\": \"2023-07-02T22:16:05.358Z\",\n            \"__v\": 0,\n            \"allowed\": false\n        },\n        {\n            \"_id\": \"64a1f7ee0b0f1f504090efe9\",\n            \"title\": \"USER POST\",\n            \"content\": \"ANOTHER POST!\",\n            \"allowed\": false,\n            \"author\": \"64a1f616e9e3eb7b6bdc4cac\",\n            \"createdAt\": \"2023-07-02T22:19:26.958Z\",\n            \"updatedAt\": \"2023-07-02T22:19:26.958Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"64a1f7ff0b0f1f504090efed\",\n            \"title\": \"USER POST\",\n            \"content\": \"ANOTHER POSTTT!\",\n            \"allowed\": false,\n            \"author\": \"64a1f616e9e3eb7b6bdc4cac\",\n            \"createdAt\": \"2023-07-02T22:19:43.025Z\",\n            \"updatedAt\": \"2023-07-02T22:19:43.025Z\",\n            \"__v\": 0\n        }\n    ],\n    \"totalItems\": 3\n}"
+				}
+			]
+		},
+		{
+			"name": "By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/feed/post/649f10b981d99851efe4bd1c",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feed",
+						"post",
+						"649f10b981d99851efe4bd1c"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/feed/post/64a1f6d2e9e3eb7b6bdc4cb4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"feed",
+								"post",
+								"64a1f6d2e9e3eb7b6bdc4cb4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "254"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"fe-Ta47tQdMIzcgrnwxbjC341D0nRI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jul 2023 22:24:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Post fetched\",\n    \"post\": {\n        \"_id\": \"64a1f6d2e9e3eb7b6bdc4cb4\",\n        \"title\": \"USER POST UPDATED\",\n        \"content\": \"UPDATED\",\n        \"author\": \"64a1f616e9e3eb7b6bdc4cac\",\n        \"createdAt\": \"2023-07-02T22:14:42.779Z\",\n        \"updatedAt\": \"2023-07-02T22:16:05.358Z\",\n        \"__v\": 0,\n        \"allowed\": false\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"A POST!\",\r\n    \"title\": \"2nd. user post!\",\r\n    \"allowed\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/feed/post",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feed",
+						"post"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"A POST!\",\r\n    \"title\": \"USER POST\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/feed/post",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"feed",
+								"post"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "323"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"143-W2s0FgEMHmIKOu3J5x8LYZQsTVA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jul 2023 22:14:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Post created successfully!\",\n    \"post\": {\n        \"title\": \"USER POST\",\n        \"content\": \"A POST!\",\n        \"allowed\": false,\n        \"author\": \"64a1f616e9e3eb7b6bdc4cac\",\n        \"_id\": \"64a1f6d2e9e3eb7b6bdc4cb4\",\n        \"createdAt\": \"2023-07-02T22:14:42.779Z\",\n        \"updatedAt\": \"2023-07-02T22:14:42.779Z\",\n        \"__v\": 0\n    },\n    \"author\": {\n        \"_id\": \"64a1f616e9e3eb7b6bdc4cac\",\n        \"name\": \"user user\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"UPDATED\",\r\n    \"title\": \"bohodsfdssadsaoo\",\r\n    \"allowed\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/feed/post/649ff5a426dc0f8fd22eafd5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feed",
+						"post",
+						"649ff5a426dc0f8fd22eafd5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"UPDATED\",\r\n    \"title\": \"USER POST UPDATED\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/feed/post/64a1f6d2e9e3eb7b6bdc4cb4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"feed",
+								"post",
+								"64a1f6d2e9e3eb7b6bdc4cb4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "239"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ef-DsaBBZfbjYmvsuLFT0O8iwSvaXg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jul 2023 22:16:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Post updated!\",\n    \"post\": {\n        \"_id\": \"64a1f6d2e9e3eb7b6bdc4cb4\",\n        \"title\": \"USER POST UPDATED\",\n        \"content\": \"UPDATED\",\n        \"author\": \"64a1f616e9e3eb7b6bdc4cac\",\n        \"createdAt\": \"2023-07-02T22:14:42.779Z\",\n        \"updatedAt\": \"2023-07-02T22:16:05.358Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/feed/post/649ffc247c9efef470d06054",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feed",
+						"post",
+						"649ffc247c9efef470d06054"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ById",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/feed/post/64a1f7aa0b0f1f504090efe0",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"feed",
+								"post",
+								"64a1f7aa0b0f1f504090efe0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "247"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f7-UChbFt4jQid5BGGL2TEX2w0/44Y\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jul 2023 22:18:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Post deleted!\",\n    \"post\": {\n        \"_id\": \"64a1f7aa0b0f1f504090efe0\",\n        \"title\": \"USER POST\",\n        \"content\": \"A POST!\",\n        \"allowed\": false,\n        \"author\": \"64a1f616e9e3eb7b6bdc4cac\",\n        \"createdAt\": \"2023-07-02T22:18:18.918Z\",\n        \"updatedAt\": \"2023-07-02T22:18:18.918Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Post-requests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/feed/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feed",
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post-requests",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/feed/post-requests",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"feed",
+								"post-requests"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "506"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1fa-1Yn2uEMuBSCvFyRk/D+CpjXl2mo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jul 2023 22:25:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Fetched posts successfully!\",\n    \"posts\": [\n        {\n            \"_id\": \"64a1f7ee0b0f1f504090efe9\",\n            \"title\": \"USER POST\",\n            \"content\": \"ANOTHER POST!\",\n            \"allowed\": false,\n            \"author\": \"64a1f616e9e3eb7b6bdc4cac\",\n            \"createdAt\": \"2023-07-02T22:19:26.958Z\",\n            \"updatedAt\": \"2023-07-02T22:19:26.958Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"64a1f7ff0b0f1f504090efed\",\n            \"title\": \"USER POST\",\n            \"content\": \"ANOTHER POSTTT!\",\n            \"allowed\": false,\n            \"author\": \"64a1f616e9e3eb7b6bdc4cac\",\n            \"createdAt\": \"2023-07-02T22:19:43.025Z\",\n            \"updatedAt\": \"2023-07-02T22:19:43.025Z\",\n            \"__v\": 0\n        }\n    ],\n    \"totalItems\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "Allow Post-Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/feed/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feed",
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Allow Post-Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/feed/post-request/64a1f6d2e9e3eb7b6bdc4cb4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"feed",
+								"post-request",
+								"64a1f6d2e9e3eb7b6bdc4cb4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "275"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"113-7e3Mi5GXDzIbEEOxrtk2ggZhrqI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jul 2023 22:25:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Post request allowed successfully!\",\n    \"post\": {\n        \"_id\": \"64a1f6d2e9e3eb7b6bdc4cb4\",\n        \"title\": \"USER POST UPDATED\",\n        \"content\": \"UPDATED\",\n        \"author\": \"64a1f616e9e3eb7b6bdc4cac\",\n        \"createdAt\": \"2023-07-02T22:14:42.779Z\",\n        \"updatedAt\": \"2023-07-02T22:25:09.777Z\",\n        \"__v\": 0,\n        \"allowed\": true\n    }\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXJJZCI6IjY0YTFmODE2MGIwZjFmNTA0MDkwZWZmMiIsImlhdCI6MTY4ODMzNjQyMywiZXhwIjoxNjg4MzQwMDIzfQ.MAXnAws2zv8_Qy_5cgtbm6vrMbC9kxDBfwPqDYq7CUw",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
